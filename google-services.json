@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "306780822104",
+    "project_id": "simple-demo-project-6a29f",
+    "storage_bucket": "simple-demo-project-6a29f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306780822104:android:6969989f76d50a875ec82d",
+        "android_client_info": {
+          "package_name": "com.skaremani.mydemoapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7hj4UlB9O7Tcm3pt6kp5bmncFFZopEeA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
