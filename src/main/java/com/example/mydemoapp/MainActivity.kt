@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
     private val carPropertyEventCallback = object : CarPropertyManager.CarPropertyEventCallback {
         override fun onChangeEvent(value: CarPropertyValue<*>) {
             val currentSpeed = value.value as? Float ?: 0.0f
-            val message = "Overspeed detected! Current: $currentSpeed km/h (Limit: $speedLimit)"
+            Log.d(mTAG, "Current: $currentSpeed km/h (Limit: $speedLimit)")
 
             // Check if speed exceeds the speed limit
             if (currentSpeed > speedLimit) {
@@ -103,8 +103,7 @@ class MainActivity : AppCompatActivity() {
                     mapOf(
                         "customerId" to customerId,
                         "limit" to speedLimit,
-                        "current" to currentSpeed,
-                        "message" to message
+                        "current" to currentSpeed
                     )
                 )
                 notificationManager.sendNotification(
